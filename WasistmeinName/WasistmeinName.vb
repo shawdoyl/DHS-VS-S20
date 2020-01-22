@@ -17,7 +17,6 @@ Module WasistmeinName
         Console.WriteLine("You entered " & userMessage & ", welcome " & userMessage & ".")
         Console.ReadLine()
 
-
     End Sub
 
 End Module
