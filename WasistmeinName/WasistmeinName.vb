@@ -1,7 +1,7 @@
 ﻿'Doyle_Shaw
 'RCET0265
-'Spring 2020
-'Say My Name
+'Spring_2020
+'Say_My_Name
 'https://github.com/shawdoyl/DHS-VS-S20
 
 Option Explicit On
