@@ -18,6 +18,8 @@ Module IfThen
             Console.WriteLine("First number is greater...")
         ElseIf firstNumber < secondNumber Then
             Console.WriteLine("Second number is greater...")
+        ElseIf firstNumber = secondNumber Then
+            Console.WriteLine("Numbers are equal...")
         ElseIf firstNumber <= secondNumber Then
             Console.WriteLine("First number is is smaller or equal...")
         ElseIf firstNumber >= secondNumber Then
