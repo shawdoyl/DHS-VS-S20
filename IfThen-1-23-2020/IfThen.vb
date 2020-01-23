@@ -8,11 +8,26 @@ Module IfThen
 
     Sub Main()
 
-        If 1 > 2 Then
-            Console.WriteLine("True")
+        Dim firstNumber As Integer
+        Dim secondNumber As Integer
+
+        firstNumber = 5
+        secondNumber = 3
+
+        If firstNumber > secondNumber Then
+            Console.WriteLine("First number is greater...")
+        ElseIf firstNumber < secondNumber Then
+            Console.WriteLine("Second number is greater...")
+        ElseIf firstNumber <= secondNumber Then
+            Console.WriteLine("First number is is smaller or equal...")
+        ElseIf firstNumber >= secondNumber Then
+            Console.WriteLine("First number is is greater or equal...")
+        ElseIf firstNumber <> secondNumber Then
+            Console.WriteLine("No Numbers are equal...")
         Else
-            Console.WriteLine("False")
+            Console.WriteLine("Some other thing???")
         End If
+        Console.ReadLine()
 
     End Sub
 
