@@ -6,6 +6,7 @@
 
 Option Explicit On
 Option Strict On
+Option Compare Text
 
 Module WasistmeinName
 
@@ -16,13 +17,13 @@ Module WasistmeinName
         userMessage = Console.ReadLine()
 
         If userMessage = "Doyle" Then
-            Console.WriteLine("Welcome back Tigerfang.")
+            Console.WriteLine("Welcome back Tigerfang. Ready for Life?")
         ElseIf userMessage = "Joe" Then
             Console.WriteLine("Welcome  back user " & userMessage & ".")
         ElseIf userMessage = "Emily" Then
             Console.WriteLine("Welcome back user " & userMessage & ".")
         Else
-            Console.WriteLine("Welcome new user. Would you like to input your info.")
+            Console.WriteLine("Access is Denied.")
         End If
 
         Console.ReadLine()
