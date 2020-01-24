@@ -14,7 +14,17 @@ Module WasistmeinName
         Dim userMessage As String
         Console.WriteLine("Please enter your name. Press Enter when done.")
         userMessage = Console.ReadLine()
-        Console.WriteLine("You entered " & userMessage & ", welcome " & userMessage & ".")
+
+        If userMessage = "Doyle" Then
+            Console.WriteLine("Welcome back Tigerfang.")
+        ElseIf userMessage = "Joe" Then
+            Console.WriteLine("Welcome  back user " & userMessage & ".")
+        ElseIf userMessage = "Emily" Then
+            Console.WriteLine("Welcome back user " & userMessage & ".")
+        Else
+            Console.WriteLine("Welcome new user.")
+        End If
+
         Console.ReadLine()
 
     End Sub
