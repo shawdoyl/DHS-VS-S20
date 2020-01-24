@@ -22,7 +22,7 @@ Module WasistmeinName
         ElseIf userMessage = "Emily" Then
             Console.WriteLine("Welcome back user " & userMessage & ".")
         Else
-            Console.WriteLine("Welcome new user.")
+            Console.WriteLine("Welcome new user. Would you like to input your info.")
         End If
 
         Console.ReadLine()
