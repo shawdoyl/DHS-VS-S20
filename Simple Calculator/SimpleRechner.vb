@@ -7,6 +7,7 @@
 Option Explicit On
 Option Strict On
 Option Compare Text
+
 Module SimpleRechner
 
     Sub Main()
@@ -33,9 +34,9 @@ Module SimpleRechner
             Console.WriteLine(CInt(firstNumber) - CInt(secondNumber))
         ElseIf mathSymbol = "Quotient" Or mathSymbol = "/" Or mathSymbol = "Divide" Or mathSymbol = "Division" Then
             Console.WriteLine(firstNumber & "/" & secondNumber & "=")
-                Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
-            Else
-                Console.WriteLine("That is not an appropiate Response.")
+            Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
+        Else
+            Console.WriteLine("That is not an appropiate Response.")
         End If
 
         Console.ReadLine()
