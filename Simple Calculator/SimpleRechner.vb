@@ -24,21 +24,39 @@ Module SimpleRechner
         mathSymbol = Console.ReadLine()
 
         If mathSymbol = "Sum" Or mathSymbol = "Addition" Or mathSymbol = "Add" Or mathSymbol = "+" Then
-            Console.WriteLine(firstNumber & "+" & secondNumber & "=")
-            Console.WriteLine(CInt(firstNumber) + CInt(secondNumber))
+            Try
+                Console.WriteLine(firstNumber & "+" & secondNumber & "=")
+                Console.WriteLine(CInt(firstNumber) + CInt(secondNumber))
+            Catch ex As Exception
+                Console.WriteLine("Please Enter a Whole Number.")
+                Console.WriteLine(ex.Message.ToString)
+            End Try
         ElseIf mathSymbol = "*" Or mathSymbol = "Multiply" Or mathSymbol = "Multiplication" Or mathSymbol = "Product" Then
-            Console.WriteLine(firstNumber & "*" & secondNumber & "=")
-            Console.WriteLine(CInt(firstNumber) * CInt(secondNumber))
+            Try
+                Console.WriteLine(firstNumber & "*" & secondNumber & "=")
+                Console.WriteLine(CInt(firstNumber) * CInt(secondNumber))
+            Catch ex As Exception
+                Console.WriteLine("Please Enter a Whole Number.")
+            End Try
         ElseIf mathSymbol = "-" Or mathSymbol = "Subtract" Or mathSymbol = "Minus" Or mathSymbol = "Difference" Then
-            Console.WriteLine(firstNumber & "-" & secondNumber & "=")
-            Console.WriteLine(CInt(firstNumber) - CInt(secondNumber))
+            Try
+                Console.WriteLine(firstNumber & "-" & secondNumber & "=")
+                Console.WriteLine(CInt(firstNumber) - CInt(secondNumber))
+            Catch ex As Exception
+                Console.WriteLine("Please Enter a Whole Number.")
+            End Try
         ElseIf mathSymbol = "Quotient" Or mathSymbol = "/" Or mathSymbol = "Divide" Or mathSymbol = "Division" Then
-            Console.WriteLine(firstNumber & "/" & secondNumber & "=")
-            Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
+            Try
+                Console.WriteLine(firstNumber & "/" & secondNumber & "=")
+                Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
+            Catch ex As Exception
+                Console.WriteLine("Please Enter a Whole Number.")
+            End Try
         Else
             Console.WriteLine("That is not an appropiate Response.")
         End If
 
+        Console.WriteLine("Have A Nice Day.")
         Console.ReadLine()
 
     End Sub
