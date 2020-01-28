@@ -25,32 +25,39 @@ Module SimpleRechner
 
         If mathSymbol = "Sum" Or mathSymbol = "Addition" Or mathSymbol = "Add" Or mathSymbol = "+" Then
             Try
-                Console.WriteLine(firstNumber & "+" & secondNumber & "=")
-                Console.WriteLine(CInt(firstNumber) + CInt(secondNumber))
-            Catch ex As Exception
+                Console.WriteLine(firstNumber & "/" & secondNumber & "=")
+                Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
+            Catch ex As InvalidCastException
                 Console.WriteLine("Please Enter a Whole Number.")
-                Console.WriteLine(ex.Message.ToString)
+            Catch ex As Exception
+                Console.WriteLine("This is broken now.")
             End Try
         ElseIf mathSymbol = "*" Or mathSymbol = "Multiply" Or mathSymbol = "Multiplication" Or mathSymbol = "Product" Then
             Try
-                Console.WriteLine(firstNumber & "*" & secondNumber & "=")
-                Console.WriteLine(CInt(firstNumber) * CInt(secondNumber))
-            Catch ex As Exception
+                Console.WriteLine(firstNumber & "/" & secondNumber & "=")
+                Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
+            Catch ex As InvalidCastException
                 Console.WriteLine("Please Enter a Whole Number.")
+            Catch ex As Exception
+                Console.WriteLine("This is broken now.")
             End Try
         ElseIf mathSymbol = "-" Or mathSymbol = "Subtract" Or mathSymbol = "Minus" Or mathSymbol = "Difference" Then
             Try
-                Console.WriteLine(firstNumber & "-" & secondNumber & "=")
-                Console.WriteLine(CInt(firstNumber) - CInt(secondNumber))
-            Catch ex As Exception
+                Console.WriteLine(firstNumber & "/" & secondNumber & "=")
+                Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
+            Catch ex As InvalidCastException
                 Console.WriteLine("Please Enter a Whole Number.")
+            Catch ex As Exception
+                Console.WriteLine("This is broken now.")
             End Try
         ElseIf mathSymbol = "Quotient" Or mathSymbol = "/" Or mathSymbol = "Divide" Or mathSymbol = "Division" Then
             Try
                 Console.WriteLine(firstNumber & "/" & secondNumber & "=")
                 Console.WriteLine(CInt(firstNumber) / CInt(secondNumber))
-            Catch ex As Exception
+            Catch ex As InvalidCastException
                 Console.WriteLine("Please Enter a Whole Number.")
+            Catch ex As Exception
+                Console.WriteLine("This is broken now.")
             End Try
         Else
             Console.WriteLine("That is not an appropiate Response.")
