@@ -109,7 +109,7 @@ Module SimpleRechner
 
             Loop
 
-            Console.WriteLine("Have A Nice Day.")
+        Console.WriteLine("Have A Nice Day.")
         Console.ReadLine()
 
     End Sub
