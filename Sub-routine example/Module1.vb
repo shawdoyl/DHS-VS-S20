@@ -27,7 +27,7 @@ Module Module1
         'For i = 1 To 80 Step 20
         ShowPattern(24, "Doyle")
         'Next
-
+        playSound()
         Console.ReadLine()
 
     End Sub
@@ -89,6 +89,20 @@ Module Module1
 
         Next
 
+    End Sub
+
+    Sub playSound()
+        'Console.Beep(392, 500) 'G4'
+        'Console.Beep(440, 500) 'A4'
+        'Console.Beep(349, 750)
+        'Console.Beep(196, 750)
+        'Console.Beep(262, 500)
+        'Console.Beep(440, 250)
+        'Console.Beep(440, 250)
+        'Console.Beep(440, 250)
+        'Console.Beep(440, 1000)
+        'Console.Beep(440, 1000)
+        'Console.Beep(440, 1000)
     End Sub
 
 End Module
