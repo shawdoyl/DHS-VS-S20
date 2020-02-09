@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{97217F46-B358-4B4C-8319-F00111441BA5}</ProjectGuid>
+    <ProjectGuid>{D8A380E0-D589-41BF-9464-2F6F1880B755}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Simple_Calculator.BetterCalculator</StartupObject>
-    <RootNamespace>Simple_Calculator</RootNamespace>
-    <AssemblyName>Simple Calculator</AssemblyName>
+    <StartupObject>Better_Calculator.Module1</StartupObject>
+    <RootNamespace>Better_Calculator</RootNamespace>
+    <AssemblyName>Better Calculator</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Simple Calculator.xml</DocumentationFile>
+    <DocumentationFile>Better Calculator.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Simple Calculator.xml</DocumentationFile>
+    <DocumentationFile>Better Calculator.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
