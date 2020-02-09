@@ -1,7 +1,6 @@
 ﻿Module BetterCalculator
 
     Sub Main()
-
         Dim firstNumber As Integer
         Dim secondNumber As Integer
         Dim mathFunction As String
@@ -104,6 +103,7 @@
 
         Console.WriteLine("Have A Nice Day.")
         Console.ReadLine()
+
 
     End Sub
 
