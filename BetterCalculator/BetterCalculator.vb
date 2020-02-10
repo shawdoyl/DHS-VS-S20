@@ -1,4 +1,14 @@
-﻿Module BetterCalculator
+﻿'Doyle_Shaw
+'RCET0265
+'Spring_2020
+'Simple_Calculator
+'https://github.com/shawdoyl/DHS-VS-S20
+
+Option Explicit On
+Option Strict On
+Option Compare Text
+
+Module BetterCalculator
 
     Sub Main()
         Dim firstNumber As Integer
@@ -24,7 +34,8 @@
                 End Try
             Loop
             promptUser = True
-            Console.WriteLine("You entered" & firstNumber & ".")
+
+            Console.WriteLine("You entered " & firstNumber & ".")
             Console.WriteLine("Please enter second number. Press Enter to proceed.")
             Do While promptUser = True
                 Try
