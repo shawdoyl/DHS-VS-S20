@@ -73,11 +73,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormControlForm.vb">
+    <Compile Include="FormControlFormX.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControlForm.Designer.vb">
-      <DependentUpon>FormControlForm.vb</DependentUpon>
+    <Compile Include="FormControlFormX.Designer.vb">
+      <DependentUpon>FormControlFormX.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,8 +97,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormControlForm.resx">
-      <DependentUpon>FormControlForm.vb</DependentUpon>
+    <EmbeddedResource Include="FormControlFormX.resx">
+      <DependentUpon>FormControlFormX.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
