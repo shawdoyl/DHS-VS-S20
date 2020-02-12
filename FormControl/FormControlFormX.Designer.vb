@@ -83,9 +83,10 @@ Partial Class FormControlFormX
         '
         'UserPictureBox
         '
-        Me.UserPictureBox.Location = New System.Drawing.Point(527, 12)
+        Me.UserPictureBox.Location = New System.Drawing.Point(527, 13)
         Me.UserPictureBox.Name = "UserPictureBox"
-        Me.UserPictureBox.Size = New System.Drawing.Size(249, 149)
+        Me.UserPictureBox.Size = New System.Drawing.Size(249, 320)
+        Me.UserPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.UserPictureBox.TabIndex = 3
         Me.UserPictureBox.TabStop = False
         '
@@ -99,7 +100,7 @@ Partial Class FormControlFormX
         Me.UserInput.Controls.Add(Me.NameTextBox)
         Me.UserInput.Location = New System.Drawing.Point(12, 12)
         Me.UserInput.Name = "UserInput"
-        Me.UserInput.Size = New System.Drawing.Size(257, 324)
+        Me.UserInput.Size = New System.Drawing.Size(257, 150)
         Me.UserInput.TabIndex = 4
         Me.UserInput.TabStop = False
         '
@@ -135,7 +136,7 @@ Partial Class FormControlFormX
         Me.StateTextBox.Location = New System.Drawing.Point(52, 91)
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(190, 20)
-        Me.StateTextBox.TabIndex = 8
+        Me.StateTextBox.TabIndex = 3
         Me.StateTextBox.Text = "CA"
         '
         'StreetTextBox
@@ -143,7 +144,7 @@ Partial Class FormControlFormX
         Me.StreetTextBox.Location = New System.Drawing.Point(52, 54)
         Me.StreetTextBox.Name = "StreetTextBox"
         Me.StreetTextBox.Size = New System.Drawing.Size(190, 20)
-        Me.StreetTextBox.TabIndex = 7
+        Me.StreetTextBox.TabIndex = 2
         Me.StreetTextBox.Text = "123 Wabbit Woad"
         '
         'NameTextBox
@@ -151,7 +152,7 @@ Partial Class FormControlFormX
         Me.NameTextBox.Location = New System.Drawing.Point(52, 15)
         Me.NameTextBox.Name = "NameTextBox"
         Me.NameTextBox.Size = New System.Drawing.Size(190, 20)
-        Me.NameTextBox.TabIndex = 6
+        Me.NameTextBox.TabIndex = 1
         Me.NameTextBox.Text = "Elmer Fudd"
         '
         'UserSelection
@@ -175,7 +176,7 @@ Partial Class FormControlFormX
         Me.CheckBox7.Location = New System.Drawing.Point(50, 179)
         Me.CheckBox7.Name = "CheckBox7"
         Me.CheckBox7.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox7.TabIndex = 7
+        Me.CheckBox7.TabIndex = 10
         Me.CheckBox7.Text = "CheckBox7"
         Me.CheckBox7.UseVisualStyleBackColor = True
         '
@@ -185,7 +186,7 @@ Partial Class FormControlFormX
         Me.CheckBox3.Location = New System.Drawing.Point(50, 156)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox3.TabIndex = 6
+        Me.CheckBox3.TabIndex = 9
         Me.CheckBox3.Text = "CheckBox3"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
@@ -195,7 +196,7 @@ Partial Class FormControlFormX
         Me.CheckBox2.Location = New System.Drawing.Point(50, 133)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox2.TabIndex = 4
+        Me.CheckBox2.TabIndex = 8
         Me.CheckBox2.Text = "CheckBox2"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
@@ -205,7 +206,7 @@ Partial Class FormControlFormX
         Me.CheckBox1.Location = New System.Drawing.Point(50, 110)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox1.TabIndex = 3
+        Me.CheckBox1.TabIndex = 7
         Me.CheckBox1.Text = "CheckBox1"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
@@ -215,7 +216,7 @@ Partial Class FormControlFormX
         Me.RadioButton3.Location = New System.Drawing.Point(50, 68)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton3.TabIndex = 2
+        Me.RadioButton3.TabIndex = 6
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "RadioButton3"
         Me.RadioButton3.UseVisualStyleBackColor = True
@@ -226,7 +227,7 @@ Partial Class FormControlFormX
         Me.RadioButton2.Location = New System.Drawing.Point(50, 45)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabIndex = 5
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "RadioButton2"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -237,16 +238,15 @@ Partial Class FormControlFormX
         Me.RadioButton1.Location = New System.Drawing.Point(50, 22)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.TabIndex = 4
         Me.RadioButton1.Text = "RadioButton1"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'DisplayLabel
         '
-        Me.DisplayLabel.Location = New System.Drawing.Point(528, 145)
+        Me.DisplayLabel.Location = New System.Drawing.Point(12, 165)
         Me.DisplayLabel.Name = "DisplayLabel"
-        Me.DisplayLabel.Size = New System.Drawing.Size(248, 168)
+        Me.DisplayLabel.Size = New System.Drawing.Size(257, 168)
         Me.DisplayLabel.TabIndex = 6
         '
         'RadioButton4

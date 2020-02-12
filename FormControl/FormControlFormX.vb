@@ -19,9 +19,18 @@
         If CheckBox1.Checked = True Then
             DisplayLabel.Text = NameTextBox.Text
         End If
+        If CheckBox2.Checked = True Then
+            MsgBox("Hello, your data is no good.")
+        End If
+        If CheckBox3.Checked = True Then
+            UserPictureBox.Image = My.Resources.moon_elf
+        Else
+            UserPictureBox.Image = Nothing
+        End If
     End Sub
 
     Private Sub FormControlFormX_Load(sender As Object, e As EventArgs) Handles Me.Load
         RadioButton1.Checked = True
     End Sub
+
 End Class
