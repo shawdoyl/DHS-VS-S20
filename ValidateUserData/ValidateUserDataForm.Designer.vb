@@ -26,43 +26,54 @@ Partial Class ValidateUserDataForm
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.ValidateButton = New System.Windows.Forms.Button()
+        Me.TotalButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(9, 11)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(220, 20)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(9, 37)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(220, 20)
         Me.TextBox2.TabIndex = 1
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(9, 63)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(220, 20)
         Me.TextBox3.TabIndex = 2
         '
         'ValidateButton
         '
-        Me.ValidateButton.Location = New System.Drawing.Point(57, 89)
+        Me.ValidateButton.Location = New System.Drawing.Point(12, 89)
         Me.ValidateButton.Name = "ValidateButton"
         Me.ValidateButton.Size = New System.Drawing.Size(75, 23)
         Me.ValidateButton.TabIndex = 3
         Me.ValidateButton.Text = "Validate"
         Me.ValidateButton.UseVisualStyleBackColor = True
         '
+        'TotalButton
+        '
+        Me.TotalButton.Location = New System.Drawing.Point(154, 89)
+        Me.TotalButton.Name = "TotalButton"
+        Me.TotalButton.Size = New System.Drawing.Size(75, 23)
+        Me.TotalButton.TabIndex = 4
+        Me.TotalButton.Text = "Total"
+        Me.TotalButton.UseVisualStyleBackColor = True
+        '
         'ValidateUserDataForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(190, 121)
+        Me.ClientSize = New System.Drawing.Size(241, 121)
+        Me.Controls.Add(Me.TotalButton)
         Me.Controls.Add(Me.ValidateButton)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
@@ -78,4 +89,5 @@ Partial Class ValidateUserDataForm
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents ValidateButton As Button
+    Friend WithEvents TotalButton As Button
 End Class
