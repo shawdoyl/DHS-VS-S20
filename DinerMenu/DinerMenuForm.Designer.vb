@@ -22,6 +22,7 @@ Partial Class DinerMenuForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DinerMenuForm))
         Me.SoupButton = New System.Windows.Forms.Button()
         Me.SaladButton = New System.Windows.Forms.Button()
         Me.FishButton = New System.Windows.Forms.Button()
@@ -32,27 +33,30 @@ Partial Class DinerMenuForm
         '
         'SoupButton
         '
-        Me.SoupButton.Location = New System.Drawing.Point(27, 385)
+        Me.SoupButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SoupButton.Location = New System.Drawing.Point(209, 384)
         Me.SoupButton.Name = "SoupButton"
-        Me.SoupButton.Size = New System.Drawing.Size(101, 38)
+        Me.SoupButton.Size = New System.Drawing.Size(114, 54)
         Me.SoupButton.TabIndex = 0
         Me.SoupButton.Text = "Soup"
         Me.SoupButton.UseVisualStyleBackColor = True
         '
         'SaladButton
         '
-        Me.SaladButton.Location = New System.Drawing.Point(165, 385)
+        Me.SaladButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaladButton.Location = New System.Drawing.Point(344, 384)
         Me.SaladButton.Name = "SaladButton"
-        Me.SaladButton.Size = New System.Drawing.Size(101, 38)
+        Me.SaladButton.Size = New System.Drawing.Size(115, 54)
         Me.SaladButton.TabIndex = 1
         Me.SaladButton.Text = "Salad"
         Me.SaladButton.UseVisualStyleBackColor = True
         '
         'FishButton
         '
-        Me.FishButton.Location = New System.Drawing.Point(308, 385)
+        Me.FishButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FishButton.Location = New System.Drawing.Point(479, 384)
         Me.FishButton.Name = "FishButton"
-        Me.FishButton.Size = New System.Drawing.Size(101, 38)
+        Me.FishButton.Size = New System.Drawing.Size(112, 54)
         Me.FishButton.TabIndex = 2
         Me.FishButton.Text = "Fish"
         Me.FishButton.UseVisualStyleBackColor = True
@@ -68,26 +72,36 @@ Partial Class DinerMenuForm
         '
         'DinerDisplayLabel
         '
+        Me.DinerDisplayLabel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DinerDisplayLabel.Font = New System.Drawing.Font("Times New Roman", 36.0!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DinerDisplayLabel.Location = New System.Drawing.Point(274, 9)
+        Me.DinerDisplayLabel.Location = New System.Drawing.Point(236, 28)
         Me.DinerDisplayLabel.Name = "DinerDisplayLabel"
-        Me.DinerDisplayLabel.Size = New System.Drawing.Size(295, 43)
+        Me.DinerDisplayLabel.Size = New System.Drawing.Size(328, 58)
         Me.DinerDisplayLabel.TabIndex = 5
-        Me.DinerDisplayLabel.Text = "Shaw's Diner"
+        Me.DinerDisplayLabel.Text = "Arthur's Diner"
+        Me.DinerDisplayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'DisplaySpecialLabel
         '
+        Me.DisplaySpecialLabel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DisplaySpecialLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.DisplaySpecialLabel.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisplaySpecialLabel.Location = New System.Drawing.Point(218, 98)
         Me.DisplaySpecialLabel.Name = "DisplaySpecialLabel"
         Me.DisplaySpecialLabel.Size = New System.Drawing.Size(363, 245)
         Me.DisplaySpecialLabel.TabIndex = 6
+        Me.DisplaySpecialLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'DinerMenuForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.DisplaySpecialLabel)
         Me.Controls.Add(Me.DinerDisplayLabel)
@@ -96,7 +110,7 @@ Partial Class DinerMenuForm
         Me.Controls.Add(Me.SaladButton)
         Me.Controls.Add(Me.SoupButton)
         Me.Name = "DinerMenuForm"
-        Me.Text = "Form1"
+        Me.Text = "Diner Menu"
         Me.ResumeLayout(False)
 
     End Sub
