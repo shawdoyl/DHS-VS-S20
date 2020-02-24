@@ -5,12 +5,12 @@
     End Sub
 
     Private Sub FishButton_Click(sender As Object, e As EventArgs) Handles FishButton.Click
-        displayText = "~Fish of the Day~" & vbNewLine & vbNewLine & "A Herring seasoned coconut milk. Hand delivered by a African or European Swallow of your choice. Coconut shells are given to poor squires in need of them for their knights."
+        displayText = "~Fish of the Day~" & vbNewLine & vbNewLine & "A Herring seasoned with coconut milk. Hand delivered by a African or European Swallow of your choice. Coconut shells are given to poor squires in need of them for their knights."
         DisplaySpecialLabel.Text = displayText
     End Sub
 
     Private Sub SaladButton_Click(sender As Object, e As EventArgs) Handles SaladButton.Click
-        displayText = "~Salad of the Day~"
+        displayText = "~Salad of the Day~" & vbNewLine & vbNewLine & "A beautiful Caeser's salad, prepared by the Knights Who Say Ni! Garnished with a branch from the shrubbery gifted to them by King Arthur himself."
         DisplaySpecialLabel.Text = displayText
     End Sub
 
