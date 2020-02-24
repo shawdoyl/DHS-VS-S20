@@ -33,7 +33,7 @@ Partial Class AddressLabelForm
         Me.StateTextBox = New System.Windows.Forms.TextBox()
         Me.CityTextBox = New System.Windows.Forms.TextBox()
         Me.StreetAddressTextBox = New System.Windows.Forms.TextBox()
-        Me.LastNmaeTextBox = New System.Windows.Forms.TextBox()
+        Me.LastNameTextBox = New System.Windows.Forms.TextBox()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
         Me.DisplayButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
@@ -54,7 +54,7 @@ Partial Class AddressLabelForm
         Me.InputGroupBox.Controls.Add(Me.StateTextBox)
         Me.InputGroupBox.Controls.Add(Me.CityTextBox)
         Me.InputGroupBox.Controls.Add(Me.StreetAddressTextBox)
-        Me.InputGroupBox.Controls.Add(Me.LastNmaeTextBox)
+        Me.InputGroupBox.Controls.Add(Me.LastNameTextBox)
         Me.InputGroupBox.Controls.Add(Me.FirstNameTextBox)
         Me.InputGroupBox.Location = New System.Drawing.Point(12, 12)
         Me.InputGroupBox.Name = "InputGroupBox"
@@ -145,12 +145,12 @@ Partial Class AddressLabelForm
         Me.StreetAddressTextBox.Size = New System.Drawing.Size(100, 20)
         Me.StreetAddressTextBox.TabIndex = 2
         '
-        'LastNmaeTextBox
+        'LastNameTextBox
         '
-        Me.LastNmaeTextBox.Location = New System.Drawing.Point(16, 93)
-        Me.LastNmaeTextBox.Name = "LastNmaeTextBox"
-        Me.LastNmaeTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.LastNmaeTextBox.TabIndex = 1
+        Me.LastNameTextBox.Location = New System.Drawing.Point(16, 93)
+        Me.LastNameTextBox.Name = "LastNameTextBox"
+        Me.LastNameTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.LastNameTextBox.TabIndex = 1
         '
         'FirstNameTextBox
         '
@@ -206,7 +206,7 @@ Partial Class AddressLabelForm
         Me.Controls.Add(Me.DisplayButton)
         Me.Controls.Add(Me.InputGroupBox)
         Me.Name = "AddressLabelForm"
-        Me.Text = "Form1"
+        Me.Text = "Address Label Viewer"
         Me.InputGroupBox.ResumeLayout(False)
         Me.InputGroupBox.PerformLayout()
         Me.ResumeLayout(False)
@@ -224,7 +224,7 @@ Partial Class AddressLabelForm
     Friend WithEvents StateTextBox As TextBox
     Friend WithEvents CityTextBox As TextBox
     Friend WithEvents StreetAddressTextBox As TextBox
-    Friend WithEvents LastNmaeTextBox As TextBox
+    Friend WithEvents LastNameTextBox As TextBox
     Friend WithEvents FirstNameTextBox As TextBox
     Friend WithEvents DisplayButton As Button
     Friend WithEvents ClearButton As Button
