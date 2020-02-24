@@ -1,4 +1,10 @@
-﻿Public Class DinerMenuForm
+﻿'Shaw, Doyle
+'RCET0265
+'Spring 2020
+'Diner Menu Program
+'https://github.com/shawdoyl/DHS-VS-S20
+
+Public Class DinerMenuForm
     Public displayText As String
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
