@@ -20,5 +20,6 @@
 
     Private Sub DataListBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DataListBox.SelectedIndexChanged
         Me.Text = DataListBox.SelectedIndex.ToString
+        'TODO add selected to first name and last name text box
     End Sub
 End Class
