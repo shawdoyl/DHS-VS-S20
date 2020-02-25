@@ -70,7 +70,7 @@ Partial Class AddressLabelForm
         '
         Me.ZipLabel.AutoSize = True
         Me.ZipLabel.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ZipLabel.Location = New System.Drawing.Point(15, 259)
+        Me.ZipLabel.Location = New System.Drawing.Point(15, 260)
         Me.ZipLabel.Name = "ZipLabel"
         Me.ZipLabel.Size = New System.Drawing.Size(63, 15)
         Me.ZipLabel.TabIndex = 11
@@ -80,7 +80,7 @@ Partial Class AddressLabelForm
         '
         Me.StateLabel.AutoSize = True
         Me.StateLabel.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StateLabel.Location = New System.Drawing.Point(15, 211)
+        Me.StateLabel.Location = New System.Drawing.Point(15, 212)
         Me.StateLabel.Name = "StateLabel"
         Me.StateLabel.Size = New System.Drawing.Size(42, 15)
         Me.StateLabel.TabIndex = 10
@@ -100,7 +100,7 @@ Partial Class AddressLabelForm
         '
         Me.StreetAddressLabel.AutoSize = True
         Me.StreetAddressLabel.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StreetAddressLabel.Location = New System.Drawing.Point(13, 117)
+        Me.StreetAddressLabel.Location = New System.Drawing.Point(15, 118)
         Me.StreetAddressLabel.Name = "StreetAddressLabel"
         Me.StreetAddressLabel.Size = New System.Drawing.Size(105, 15)
         Me.StreetAddressLabel.TabIndex = 8
@@ -110,7 +110,7 @@ Partial Class AddressLabelForm
         '
         Me.LastNameLabel.AutoSize = True
         Me.LastNameLabel.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LastNameLabel.Location = New System.Drawing.Point(13, 77)
+        Me.LastNameLabel.Location = New System.Drawing.Point(15, 77)
         Me.LastNameLabel.Name = "LastNameLabel"
         Me.LastNameLabel.Size = New System.Drawing.Size(70, 15)
         Me.LastNameLabel.TabIndex = 7
@@ -128,44 +128,50 @@ Partial Class AddressLabelForm
         '
         'ZipTextBox
         '
-        Me.ZipTextBox.Location = New System.Drawing.Point(18, 275)
+        Me.ZipTextBox.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipTextBox.Location = New System.Drawing.Point(18, 276)
         Me.ZipTextBox.Name = "ZipTextBox"
-        Me.ZipTextBox.Size = New System.Drawing.Size(100, 29)
+        Me.ZipTextBox.Size = New System.Drawing.Size(100, 26)
         Me.ZipTextBox.TabIndex = 5
         '
         'StateTextBox
         '
-        Me.StateTextBox.Location = New System.Drawing.Point(18, 227)
+        Me.StateTextBox.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StateTextBox.Location = New System.Drawing.Point(18, 228)
         Me.StateTextBox.Name = "StateTextBox"
-        Me.StateTextBox.Size = New System.Drawing.Size(100, 29)
+        Me.StateTextBox.Size = New System.Drawing.Size(60, 26)
         Me.StateTextBox.TabIndex = 4
         '
         'CityTextBox
         '
+        Me.CityTextBox.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CityTextBox.Location = New System.Drawing.Point(18, 179)
         Me.CityTextBox.Name = "CityTextBox"
-        Me.CityTextBox.Size = New System.Drawing.Size(100, 29)
+        Me.CityTextBox.Size = New System.Drawing.Size(202, 26)
         Me.CityTextBox.TabIndex = 3
         '
         'StreetAddressTextBox
         '
-        Me.StreetAddressTextBox.Location = New System.Drawing.Point(16, 133)
+        Me.StreetAddressTextBox.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StreetAddressTextBox.Location = New System.Drawing.Point(18, 134)
         Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
-        Me.StreetAddressTextBox.Size = New System.Drawing.Size(100, 29)
+        Me.StreetAddressTextBox.Size = New System.Drawing.Size(313, 26)
         Me.StreetAddressTextBox.TabIndex = 2
         '
         'LastNameTextBox
         '
-        Me.LastNameTextBox.Location = New System.Drawing.Point(16, 93)
+        Me.LastNameTextBox.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LastNameTextBox.Location = New System.Drawing.Point(18, 93)
         Me.LastNameTextBox.Name = "LastNameTextBox"
-        Me.LastNameTextBox.Size = New System.Drawing.Size(100, 29)
+        Me.LastNameTextBox.Size = New System.Drawing.Size(313, 26)
         Me.LastNameTextBox.TabIndex = 1
         '
         'FirstNameTextBox
         '
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(16, 45)
+        Me.FirstNameTextBox.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(18, 45)
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(100, 29)
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(313, 26)
         Me.FirstNameTextBox.TabIndex = 0
         '
         'DisplayButton
