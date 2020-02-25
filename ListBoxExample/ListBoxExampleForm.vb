@@ -19,7 +19,14 @@
     End Sub
 
     Private Sub DataListBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DataListBox.SelectedIndexChanged
+        Dim index As Integer
+
         Me.Text = DataListBox.SelectedIndex.ToString
-        'TODO add selected to first name and last name text box
+        'add selected to first name and last name text box
+        index = InStr(DataListBox.SelectedItem.ToString, " ")
+
+        FirstNameTextBox.Text = Strings.Left(DataListBox.SelectedItem.ToString, index).ToString
+        LastNameTextBox.Text = Strings.Right(DataListBox.SelectedItem.ToString, index).ToString
+        'TODO Right() does not work
     End Sub
 End Class
