@@ -24,9 +24,8 @@
         Me.Text = DataListBox.SelectedIndex.ToString
         'add selected to first name and last name text box
         index = InStr(DataListBox.SelectedItem.ToString, " ")
+        FirstNameTextBox.Text = Trim(Strings.Left(DataListBox.SelectedItem.ToString, index).ToString)
+        LastNameTextBox.Text = Trim(Strings.Mid(DataListBox.SelectedItem.ToString, index, Len(DataListBox.SelectedItem.ToString)))
 
-        FirstNameTextBox.Text = Strings.Left(DataListBox.SelectedItem.ToString, index).ToString
-        LastNameTextBox.Text = Strings.Right(DataListBox.SelectedItem.ToString, index).ToString
-        'TODO Right() does not work
     End Sub
 End Class
