@@ -22,6 +22,7 @@ Partial Class ListBoxExampleForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.DataListBox = New System.Windows.Forms.ListBox()
         Me.AddButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
@@ -30,6 +31,7 @@ Partial Class ListBoxExampleForm
         Me.LastNameTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'DataListBox
@@ -41,6 +43,7 @@ Partial Class ListBoxExampleForm
         Me.DataListBox.Name = "DataListBox"
         Me.DataListBox.Size = New System.Drawing.Size(634, 251)
         Me.DataListBox.TabIndex = 0
+        Me.ToolTip1.SetToolTip(Me.DataListBox, "List of names")
         '
         'AddButton
         '
@@ -49,6 +52,7 @@ Partial Class ListBoxExampleForm
         Me.AddButton.Size = New System.Drawing.Size(139, 77)
         Me.AddButton.TabIndex = 1
         Me.AddButton.Text = "&Add Item"
+        Me.ToolTip1.SetToolTip(Me.AddButton, "Click here to add name currently in text boxes")
         Me.AddButton.UseVisualStyleBackColor = True
         '
         'ClearButton
@@ -58,6 +62,7 @@ Partial Class ListBoxExampleForm
         Me.ClearButton.Size = New System.Drawing.Size(149, 77)
         Me.ClearButton.TabIndex = 2
         Me.ClearButton.Text = "&Clear All"
+        Me.ToolTip1.SetToolTip(Me.ClearButton, "Clear the list box")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
         'ExitButton
@@ -67,6 +72,7 @@ Partial Class ListBoxExampleForm
         Me.ExitButton.Size = New System.Drawing.Size(140, 77)
         Me.ExitButton.TabIndex = 3
         Me.ExitButton.Text = "E&xit"
+        Me.ToolTip1.SetToolTip(Me.ExitButton, "Close the program")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'FirstNameTextBox
@@ -75,6 +81,7 @@ Partial Class ListBoxExampleForm
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
         Me.FirstNameTextBox.Size = New System.Drawing.Size(266, 20)
         Me.FirstNameTextBox.TabIndex = 4
+        Me.ToolTip1.SetToolTip(Me.FirstNameTextBox, "Enter a first name")
         '
         'LastNameTextBox
         '
@@ -82,6 +89,7 @@ Partial Class ListBoxExampleForm
         Me.LastNameTextBox.Name = "LastNameTextBox"
         Me.LastNameTextBox.Size = New System.Drawing.Size(270, 20)
         Me.LastNameTextBox.TabIndex = 5
+        Me.ToolTip1.SetToolTip(Me.LastNameTextBox, "Enter a last Name")
         '
         'Label1
         '
@@ -101,6 +109,12 @@ Partial Class ListBoxExampleForm
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Last Name"
         '
+        'ToolTip1
+        '
+        Me.ToolTip1.AutoPopDelay = 5000
+        Me.ToolTip1.InitialDelay = 100
+        Me.ToolTip1.ReshowDelay = 100
+        '
         'ListBoxExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -116,6 +130,7 @@ Partial Class ListBoxExampleForm
         Me.Controls.Add(Me.DataListBox)
         Me.Name = "ListBoxExampleForm"
         Me.Text = "List Box"
+        Me.ToolTip1.SetToolTip(Me, "This is the main form")
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -129,4 +144,5 @@ Partial Class ListBoxExampleForm
     Friend WithEvents LastNameTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
