@@ -20,7 +20,13 @@ Module MessageFunc
     Function UserMessages(addMessage As Boolean, message As String, clearMessage As Boolean) As String
 
         Static formattedMessages As String
-        formattedMessages &= message & vbNewLine
+
+        If clearMessage = True Then
+            formattedMessages = ""
+        ElseIf addMessage = True Then
+            formattedMessages &= message & vbNewLine
+        End If
+
         Return formattedMessages
 
     End Function
