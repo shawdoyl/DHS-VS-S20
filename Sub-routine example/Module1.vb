@@ -17,35 +17,36 @@ Module Module1
         'Console.WriteLine("In Sub Main")
         'Console.WriteLine(myNumber)
         'Console.ReadLine()
-        'MySub(myNumber)
         'myNumber = MyFunc(myNumber)
-        'Console.WriteLine("In Sub Main")
-        'Console.WriteLine(myNumber)
-        ''Console.WriteLine("In Sub Main")
-        ''Console.WriteLine(myNumber)
         'MySubTheSequel(7, 5, "Multiply")
         'For i = 1 To 80 Step 20
-        ShowPattern(24, "Doyle")
+        'ShowPattern(24, "Doyle")
         'Next
-        playSound()
+        'playSound()
+        Dim someNumberInMain As Integer
+        someNumberInMain = 17
+        MySub(someNumberInMain)
+        'Console.ReadLine()
+
+    End Sub
+
+    'ByVal Creates a copy -- Safe
+    'ByRef points at the callers actual variable -- Less Safe
+    'Sub MySub(ByRef myNumberInMySub As Integer)
+    Sub MySub(ByVal myNumberInMySub As Integer)
+
+        '    Dim myNumber As Integer
+        '    myNumber = myNumber + 3
+        myNumberInMySub += 3
+        Console.WriteLine("In Sub MySub")
+        Console.WriteLine(myNumberInMySub)
         Console.ReadLine()
 
     End Sub
 
-    'Sub MySub(myNumber As Integer)
-
-    '    'Dim myNumber As Integer
-    '    myNumber = myNumber + 3
-    '    myNumber += 3
-    '    Console.WriteLine("In Sub MySub")
-    '    Console.WriteLine(myNumber)
-    '    Console.ReadLine()
-
-    'End Sub
-
     'Function MyFunc(myNumber As Integer) As Integer
 
-    '    'Dim myNumber As Integer
+    '    Dim myNumber As Integer
     '    myNumber -= 65
     '    Console.WriteLine("In Function MyFunc")
     '    Console.WriteLine(myNumber)
@@ -56,18 +57,18 @@ Module Module1
 
     'Sub MySubTheSequel(firstNumber As Integer, easterEgg As Integer, operatorChoice As String)
 
-    '    Dim result As Double
+    '   Dim result As Double
 
-    '    If operatorChoice = "Add" Then
+    '   If operatorChoice = "Add" Then
     '        result = firstNumber + easterEgg
-    '    ElseIf operatorChoice = "Subtract" Then
-    '        result = firstNumber - easterEgg
-    '    ElseIf operatorChoice = "Multiply" Then
-    '        result = firstNumber * easterEgg
-    '    ElseIf operatorChoice = "Divide" Then
-    '        result = firstNumber / easterEgg
-    '    End If
-    '    Console.WriteLine(result)
+    '   ElseIf operatorChoice = "Subtract" Then
+    '      result = firstNumber - easterEgg
+    '   ElseIf operatorChoice = "Multiply" Then
+    '       result = firstNumber * easterEgg
+    '   ElseIf operatorChoice = "Divide" Then
+    '      result = firstNumber / easterEgg
+    '   End If
+    '   Console.WriteLine(result)
 
     'End Sub
 
