@@ -22,7 +22,7 @@ Partial Class FormControlFormX
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Go = New System.Windows.Forms.Button()
+        Me.GoButton = New System.Windows.Forms.Button()
         Me.UpdateButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.UserPictureBox = New System.Windows.Forms.PictureBox()
@@ -48,19 +48,21 @@ Partial Class FormControlFormX
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.AgeTextBox = New System.Windows.Forms.TextBox()
+        Me.AgeLabel = New System.Windows.Forms.Label()
         CType(Me.UserPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UserInput.SuspendLayout()
         Me.UserSelection.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Go
+        'GoButton
         '
-        Me.Go.Location = New System.Drawing.Point(347, 361)
-        Me.Go.Name = "Go"
-        Me.Go.Size = New System.Drawing.Size(143, 77)
-        Me.Go.TabIndex = 0
-        Me.Go.Text = "Go"
-        Me.Go.UseVisualStyleBackColor = True
+        Me.GoButton.Location = New System.Drawing.Point(347, 361)
+        Me.GoButton.Name = "GoButton"
+        Me.GoButton.Size = New System.Drawing.Size(143, 77)
+        Me.GoButton.TabIndex = 0
+        Me.GoButton.Text = "Go"
+        Me.GoButton.UseVisualStyleBackColor = True
         '
         'UpdateButton
         '
@@ -92,6 +94,8 @@ Partial Class FormControlFormX
         '
         'UserInput
         '
+        Me.UserInput.Controls.Add(Me.AgeLabel)
+        Me.UserInput.Controls.Add(Me.AgeTextBox)
         Me.UserInput.Controls.Add(Me.StateLabel)
         Me.UserInput.Controls.Add(Me.StreetLabel)
         Me.UserInput.Controls.Add(Me.NameLabel)
@@ -312,6 +316,22 @@ Partial Class FormControlFormX
         Me.CheckBox6.Text = "CheckBox6"
         Me.CheckBox6.UseVisualStyleBackColor = True
         '
+        'AgeTextBox
+        '
+        Me.AgeTextBox.Location = New System.Drawing.Point(52, 124)
+        Me.AgeTextBox.Name = "AgeTextBox"
+        Me.AgeTextBox.Size = New System.Drawing.Size(190, 20)
+        Me.AgeTextBox.TabIndex = 12
+        '
+        'AgeLabel
+        '
+        Me.AgeLabel.AutoSize = True
+        Me.AgeLabel.Location = New System.Drawing.Point(14, 127)
+        Me.AgeLabel.Name = "AgeLabel"
+        Me.AgeLabel.Size = New System.Drawing.Size(26, 13)
+        Me.AgeLabel.TabIndex = 13
+        Me.AgeLabel.Text = "Age"
+        '
         'FormControlFormX
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -330,7 +350,7 @@ Partial Class FormControlFormX
         Me.Controls.Add(Me.UserPictureBox)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.UpdateButton)
-        Me.Controls.Add(Me.Go)
+        Me.Controls.Add(Me.GoButton)
         Me.Name = "FormControlFormX"
         Me.Text = "User Control Interface"
         CType(Me.UserPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -343,7 +363,7 @@ Partial Class FormControlFormX
 
     End Sub
 
-    Friend WithEvents Go As Button
+    Friend WithEvents GoButton As Button
     Friend WithEvents UpdateButton As Button
     Friend WithEvents ExitButton As Button
     Friend WithEvents UserPictureBox As PictureBox
@@ -369,4 +389,6 @@ Partial Class FormControlFormX
     Friend WithEvents CheckBox6 As CheckBox
     Friend WithEvents CheckBox7 As CheckBox
     Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents AgeLabel As Label
+    Friend WithEvents AgeTextBox As TextBox
 End Class

@@ -11,11 +11,7 @@
 
     End Sub
 
-    Private Sub Street_Click(sender As Object, e As EventArgs) Handles StreetLabel.Click
-
-    End Sub
-
-    Private Sub Go_Click(sender As Object, e As EventArgs) Handles Go.Click
+    Private Sub Go_Click(sender As Object, e As EventArgs) Handles GoButton.Click
         If CheckBox1.Checked = True Then
             DisplayLabel.Text = NameTextBox.Text
         End If
@@ -30,7 +26,69 @@
     End Sub
 
     Private Sub FormControlFormX_Load(sender As Object, e As EventArgs) Handles Me.Load
-        RadioButton1.Checked = True
+        ResetAllControls()
     End Sub
 
+    Sub ResetAllControls()
+
+        'clear all textboxes
+        NameTextBox.Text = ""
+        StreetTextBox.Text = ""
+        StateTextBox.Text = ""
+
+        'start up selection
+        RadioButton1.Checked = True
+        RadioButton4.Checked = True
+
+        'Disabled by default
+        GoButton.Enabled = False
+        UpdateButton.Enabled = False
+        UserSelection.Enabled = False
+
+        'Same as Disabling UserSelection below
+        'RadioButton1.Enabled = False
+        'RadioButton2.Enabled = False
+        'RadioButton3.Enabled = False
+        'CheckBox1.Enabled = False
+        'CheckBox2.Enabled = False
+        'CheckBox3.Enabled = False
+        'CheckBox7.Enabled = False
+
+    End Sub
+
+    Private Sub AnyTextChanged(sender As Object, e As EventArgs) Handles NameTextBox.TextChanged, StreetTextBox.TextChanged, StateTextBox.TextChanged
+        EvaluateTextBoxes()
+    End Sub
+
+    Sub EvaluateTextBoxes()
+
+        If NameTextBox.Text <> "" And StreetTextBox.Text <> "" And StateTextBox.Text <> "" Then
+            UserSelection.Enabled = True
+            UpdateButton.Enabled = True
+        Else
+            UserSelection.Enabled = False
+            UpdateButton.Enabled = False
+        End If
+
+    End Sub
+
+    Private Sub AgeTextBox_Validate(sender As Object, e As EventArgs) Handles AgeTextBox.Leave
+        Dim tempNumber As Integer
+        Try
+            tempNumber = CInt(AgeTextBox.Text)
+            If tempNumber > 15 And tempNumber < 27 Then
+                MsgBox("Good Job.")
+            Else
+                MsgBox("Sorry Try the kiddy rides")
+                AgeTextBox.Text = ""
+            End If
+        Catch ex As Exception
+            MsgBox("Please enter a valid age.")
+            AgeTextBox.Text = ""
+        End Try
+
+
+
+    End Sub
 End Class
+
