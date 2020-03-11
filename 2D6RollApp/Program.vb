@@ -58,17 +58,21 @@ Module Program
 
         Next
 
-        Console.WriteLine(diceArray(0, 2) & "      " & diceArray(1, 2))
-        Console.WriteLine(diceArray(0, 3) & "      " & diceArray(1, 3))
-        Console.WriteLine(diceArray(0, 4) & "      " & diceArray(1, 4))
-        Console.WriteLine(diceArray(0, 5) & "      " & diceArray(1, 5))
-        Console.WriteLine(diceArray(0, 6) & "      " & diceArray(1, 6))
-        Console.WriteLine(diceArray(0, 7) & "      " & diceArray(1, 7))
-        Console.WriteLine(diceArray(0, 8) & "      " & diceArray(1, 8))
-        Console.WriteLine(diceArray(0, 9) & "      " & diceArray(1, 9))
-        Console.WriteLine(diceArray(0, 10) & "     " & diceArray(1, 10))
-        Console.WriteLine(diceArray(0, 11) & "     " & diceArray(1, 11))
-        Console.WriteLine(diceArray(0, 12) & "     " & diceArray(1, 12))
+        'For i = LBound(diceArray) To UBound(diceArray)
+        '    Console.Write(CStr(i + 2).PadRight(5) & "|")
+        'Next
+
+        Console.WriteLine("|" & CStr(diceArray(0, 2)).PadRight(5) & "|" & diceArray(1, 2))
+        Console.WriteLine("|" & CStr(diceArray(0, 3)).PadRight(5) & "|" & diceArray(1, 3))
+        Console.WriteLine("|" & CStr(diceArray(0, 4)).PadRight(5) & "|" & diceArray(1, 4))
+        Console.WriteLine("|" & CStr(diceArray(0, 5)).PadRight(5) & "|" & diceArray(1, 5))
+        Console.WriteLine("|" & CStr(diceArray(0, 6)).PadRight(5) & "|" & diceArray(1, 6))
+        Console.WriteLine("|" & CStr(diceArray(0, 7)).PadRight(5) & "|" & diceArray(1, 7))
+        Console.WriteLine("|" & CStr(diceArray(0, 8)).PadRight(5) & "|" & diceArray(1, 8))
+        Console.WriteLine("|" & CStr(diceArray(0, 9)).PadRight(5) & "|" & diceArray(1, 9))
+        Console.WriteLine("|" & CStr(diceArray(0, 10)).PadRight(5) & "|" & diceArray(1, 10))
+        Console.WriteLine("|" & CStr(diceArray(0, 11)).PadRight(5) & "|" & diceArray(1, 11))
+        Console.WriteLine("|" & CStr(diceArray(0, 12)).PadRight(5) & "|" & diceArray(1, 12))
         Console.WriteLine("************")
 
     End Sub
