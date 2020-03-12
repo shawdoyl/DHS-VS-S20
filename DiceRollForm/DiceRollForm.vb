@@ -24,9 +24,10 @@ Public Class DiceRollForm
             For j = 2 To 12
                 diceArray(0, j) = j
             Next
-            For j = 2 To 12
-                diceArray(1, sumDice) += 1
-            Next
+            Select Case sumDice
+                Case sumDice
+                    diceArray(1, sumDice) += 1
+            End Select
         Next
         TotalsListBox.Items.Add(Space(2) & "Result of Roll" & Space(2))
         TotalsListBox.Items.Add(StrDup(20, "*"))
@@ -62,9 +63,10 @@ Public Class DiceRollForm
             For j = 2 To 12
                 diceArray(0, j) = j
             Next
-            For j = 2 To 12
-                diceArray(1, sumDice) += 1
-            Next
+            Select Case sumDice
+                Case sumDice
+                    diceArray(1, sumDice) += 1
+            End Select
         Next
         TotalsListBox.Items.Add(Space(2) & "Result of Reroll" & Space(2))
         TotalsListBox.Items.Add(StrDup(20, "*"))
@@ -88,5 +90,7 @@ Public Class DiceRollForm
     'Button that clears the listbox.
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click, ClearToolStripMenuItem.Click
         TotalsListBox.Items.Clear()
+        RollButton.Enabled = True
+        ReRollButton.Enabled = False
     End Sub
 End Class
