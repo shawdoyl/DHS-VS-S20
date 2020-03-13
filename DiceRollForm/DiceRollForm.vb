@@ -7,8 +7,8 @@ Option Strict On
 Option Explicit On
 Option Compare Binary
 Public Class DiceRollForm
-    'Button that rolls two dice and adds the results displaying number of each result.
 
+    'Button that rolls two dice and adds the results displaying number of each result.
     Private Sub RollButton_Click(sender As Object, e As EventArgs) Handles RollButton.Click, RollToolStripMenuItem.Click
         Dim sumDice As Integer
         Static firstDice As Integer
