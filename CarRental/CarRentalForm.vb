@@ -37,10 +37,28 @@ Public Class CarRentalForm
 
     Private Sub CalculateButton_Click(sender As Object, e As EventArgs) Handles CalculateButton.Click
 
+        If AllChecksAreValid() Then
+
+        Else
+
+        End If
+
+
         MileageCharge(220) 'check and convert if kilometer.
 
     End Sub
 
+    Function AllChecksAreValid() As Boolean
+        Dim result As Boolean
+
+        'VerifyOdmeter
+        'VerifyIfEmpty
+        'ValidateNumberOfDays
+
+
+        result = False
+        Return result
+    End Function
     Function Discount(totalCharges As Decimal) As Decimal
         'Use the check boxes for AAA Member And Senior Citizen. 
         'AAA members receive a 5% discount

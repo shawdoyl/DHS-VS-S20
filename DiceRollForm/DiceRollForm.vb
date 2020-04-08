@@ -3,9 +3,11 @@
 'Spring 2020
 'RollDiceForm
 'https://github.com/shawdoyl/DHS-VS-S20
+
 Option Strict On
 Option Explicit On
 Option Compare Binary
+
 Public Class DiceRollForm
 
     'Button that rolls two dice and adds the results displaying number of each result.
