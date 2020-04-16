@@ -48,11 +48,11 @@ Partial Class CarRentalForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.AddressLabel = New System.Windows.Forms.Label()
         Me.CityLabel = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.StateLabel = New System.Windows.Forms.Label()
+        Me.ZipLabel = New System.Windows.Forms.Label()
+        Me.BeginOdometerLabel = New System.Windows.Forms.Label()
+        Me.EndOdometerLabel = New System.Windows.Forms.Label()
+        Me.DaysLabel = New System.Windows.Forms.Label()
         Me.DistanceDrivenLabel = New System.Windows.Forms.Label()
         Me.MileageChargeLabel = New System.Windows.Forms.Label()
         Me.DayChargeLabel = New System.Windows.Forms.Label()
@@ -67,89 +67,89 @@ Partial Class CarRentalForm
         '
         Me.NameTextBox.Location = New System.Drawing.Point(117, 29)
         Me.NameTextBox.Name = "NameTextBox"
-        Me.NameTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NameTextBox.Size = New System.Drawing.Size(146, 20)
         Me.NameTextBox.TabIndex = 0
         '
         'AddressTextBox
         '
         Me.AddressTextBox.Location = New System.Drawing.Point(117, 56)
         Me.AddressTextBox.Name = "AddressTextBox"
-        Me.AddressTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.AddressTextBox.Size = New System.Drawing.Size(146, 20)
         Me.AddressTextBox.TabIndex = 1
         '
         'CityTextBox
         '
         Me.CityTextBox.Location = New System.Drawing.Point(117, 83)
         Me.CityTextBox.Name = "CityTextBox"
-        Me.CityTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.CityTextBox.Size = New System.Drawing.Size(146, 20)
         Me.CityTextBox.TabIndex = 2
         '
         'StateTextBox
         '
         Me.StateTextBox.Location = New System.Drawing.Point(117, 110)
         Me.StateTextBox.Name = "StateTextBox"
-        Me.StateTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.StateTextBox.Size = New System.Drawing.Size(146, 20)
         Me.StateTextBox.TabIndex = 3
         '
         'ZipCodeTextBox
         '
         Me.ZipCodeTextBox.Location = New System.Drawing.Point(117, 137)
         Me.ZipCodeTextBox.Name = "ZipCodeTextBox"
-        Me.ZipCodeTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ZipCodeTextBox.Size = New System.Drawing.Size(146, 20)
         Me.ZipCodeTextBox.TabIndex = 4
         '
         'BeginOdometerTextBox
         '
         Me.BeginOdometerTextBox.Location = New System.Drawing.Point(117, 164)
         Me.BeginOdometerTextBox.Name = "BeginOdometerTextBox"
-        Me.BeginOdometerTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.BeginOdometerTextBox.Size = New System.Drawing.Size(146, 20)
         Me.BeginOdometerTextBox.TabIndex = 5
         '
         'EndOdometerTextBox
         '
         Me.EndOdometerTextBox.Location = New System.Drawing.Point(117, 191)
         Me.EndOdometerTextBox.Name = "EndOdometerTextBox"
-        Me.EndOdometerTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.EndOdometerTextBox.Size = New System.Drawing.Size(146, 20)
         Me.EndOdometerTextBox.TabIndex = 6
         '
         'DaysTextBox
         '
         Me.DaysTextBox.Location = New System.Drawing.Point(117, 218)
         Me.DaysTextBox.Name = "DaysTextBox"
-        Me.DaysTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.DaysTextBox.Size = New System.Drawing.Size(146, 20)
         Me.DaysTextBox.TabIndex = 7
         '
         'MileageTextBox
         '
-        Me.MileageTextBox.Location = New System.Drawing.Point(610, 26)
+        Me.MileageTextBox.Location = New System.Drawing.Point(495, 29)
         Me.MileageTextBox.Name = "MileageTextBox"
         Me.MileageTextBox.Size = New System.Drawing.Size(178, 20)
         Me.MileageTextBox.TabIndex = 8
         '
         'MileageChargeTextBox
         '
-        Me.MileageChargeTextBox.Location = New System.Drawing.Point(610, 56)
+        Me.MileageChargeTextBox.Location = New System.Drawing.Point(495, 59)
         Me.MileageChargeTextBox.Name = "MileageChargeTextBox"
         Me.MileageChargeTextBox.Size = New System.Drawing.Size(178, 20)
         Me.MileageChargeTextBox.TabIndex = 9
         '
         'DayChargeTextBox
         '
-        Me.DayChargeTextBox.Location = New System.Drawing.Point(610, 80)
+        Me.DayChargeTextBox.Location = New System.Drawing.Point(495, 83)
         Me.DayChargeTextBox.Name = "DayChargeTextBox"
         Me.DayChargeTextBox.Size = New System.Drawing.Size(178, 20)
         Me.DayChargeTextBox.TabIndex = 10
         '
         'DiscountTextBox
         '
-        Me.DiscountTextBox.Location = New System.Drawing.Point(610, 107)
+        Me.DiscountTextBox.Location = New System.Drawing.Point(495, 110)
         Me.DiscountTextBox.Name = "DiscountTextBox"
         Me.DiscountTextBox.Size = New System.Drawing.Size(178, 20)
         Me.DiscountTextBox.TabIndex = 11
         '
         'TotalOwedTextBox
         '
-        Me.TotalOwedTextBox.Location = New System.Drawing.Point(610, 133)
+        Me.TotalOwedTextBox.Location = New System.Drawing.Point(495, 136)
         Me.TotalOwedTextBox.Name = "TotalOwedTextBox"
         Me.TotalOwedTextBox.Size = New System.Drawing.Size(178, 20)
         Me.TotalOwedTextBox.TabIndex = 12
@@ -160,7 +160,7 @@ Partial Class CarRentalForm
         Me.GroupBox1.Controls.Add(Me.MilesRadioButton)
         Me.GroupBox1.Location = New System.Drawing.Point(87, 288)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(309, 86)
+        Me.GroupBox1.Size = New System.Drawing.Size(282, 86)
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
@@ -191,9 +191,9 @@ Partial Class CarRentalForm
         '
         Me.DiscountGroupBox.Controls.Add(Me.SeniorCheckBox)
         Me.DiscountGroupBox.Controls.Add(Me.AAACheckBox)
-        Me.DiscountGroupBox.Location = New System.Drawing.Point(433, 288)
+        Me.DiscountGroupBox.Location = New System.Drawing.Point(394, 288)
         Me.DiscountGroupBox.Name = "DiscountGroupBox"
-        Me.DiscountGroupBox.Size = New System.Drawing.Size(345, 86)
+        Me.DiscountGroupBox.Size = New System.Drawing.Size(279, 86)
         Me.DiscountGroupBox.TabIndex = 14
         Me.DiscountGroupBox.TabStop = False
         Me.DiscountGroupBox.Text = "Enter a Discount"
@@ -257,7 +257,7 @@ Partial Class CarRentalForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 29)
+        Me.Label1.Location = New System.Drawing.Point(12, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(82, 13)
         Me.Label1.TabIndex = 19
@@ -266,7 +266,7 @@ Partial Class CarRentalForm
         'AddressLabel
         '
         Me.AddressLabel.AutoSize = True
-        Me.AddressLabel.Location = New System.Drawing.Point(18, 53)
+        Me.AddressLabel.Location = New System.Drawing.Point(12, 59)
         Me.AddressLabel.Name = "AddressLabel"
         Me.AddressLabel.Size = New System.Drawing.Size(45, 13)
         Me.AddressLabel.TabIndex = 20
@@ -275,61 +275,61 @@ Partial Class CarRentalForm
         'CityLabel
         '
         Me.CityLabel.AutoSize = True
-        Me.CityLabel.Location = New System.Drawing.Point(24, 83)
+        Me.CityLabel.Location = New System.Drawing.Point(12, 83)
         Me.CityLabel.Name = "CityLabel"
         Me.CityLabel.Size = New System.Drawing.Size(24, 13)
         Me.CityLabel.TabIndex = 21
         Me.CityLabel.Text = "City"
         '
-        'Label4
+        'StateLabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(18, 110)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 22
-        Me.Label4.Text = "Label4"
+        Me.StateLabel.AutoSize = True
+        Me.StateLabel.Location = New System.Drawing.Point(13, 113)
+        Me.StateLabel.Name = "StateLabel"
+        Me.StateLabel.Size = New System.Drawing.Size(32, 13)
+        Me.StateLabel.TabIndex = 22
+        Me.StateLabel.Text = "State"
         '
-        'Label5
+        'ZipLabel
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 136)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
-        Me.Label5.TabIndex = 23
-        Me.Label5.Text = "Label5"
+        Me.ZipLabel.AutoSize = True
+        Me.ZipLabel.Location = New System.Drawing.Point(13, 136)
+        Me.ZipLabel.Name = "ZipLabel"
+        Me.ZipLabel.Size = New System.Drawing.Size(47, 13)
+        Me.ZipLabel.TabIndex = 23
+        Me.ZipLabel.Text = "ZipCode"
         '
-        'Label6
+        'BeginOdometerLabel
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(13, 164)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
-        Me.Label6.TabIndex = 24
-        Me.Label6.Text = "Label6"
+        Me.BeginOdometerLabel.AutoSize = True
+        Me.BeginOdometerLabel.Location = New System.Drawing.Point(13, 164)
+        Me.BeginOdometerLabel.Name = "BeginOdometerLabel"
+        Me.BeginOdometerLabel.Size = New System.Drawing.Size(103, 13)
+        Me.BeginOdometerLabel.TabIndex = 24
+        Me.BeginOdometerLabel.Text = "Beginning Odometer"
         '
-        'Label7
+        'EndOdometerLabel
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(12, 191)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(39, 13)
-        Me.Label7.TabIndex = 25
-        Me.Label7.Text = "Label7"
+        Me.EndOdometerLabel.AutoSize = True
+        Me.EndOdometerLabel.Location = New System.Drawing.Point(12, 191)
+        Me.EndOdometerLabel.Name = "EndOdometerLabel"
+        Me.EndOdometerLabel.Size = New System.Drawing.Size(89, 13)
+        Me.EndOdometerLabel.TabIndex = 25
+        Me.EndOdometerLabel.Text = "Ending Odometer"
         '
-        'Label8
+        'DaysLabel
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 218)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Label8"
+        Me.DaysLabel.AutoSize = True
+        Me.DaysLabel.Location = New System.Drawing.Point(12, 218)
+        Me.DaysLabel.Name = "DaysLabel"
+        Me.DaysLabel.Size = New System.Drawing.Size(65, 13)
+        Me.DaysLabel.TabIndex = 26
+        Me.DaysLabel.Text = "Days Driven"
         '
         'DistanceDrivenLabel
         '
         Me.DistanceDrivenLabel.AutoSize = True
-        Me.DistanceDrivenLabel.Location = New System.Drawing.Point(472, 26)
+        Me.DistanceDrivenLabel.Location = New System.Drawing.Point(359, 32)
         Me.DistanceDrivenLabel.Name = "DistanceDrivenLabel"
         Me.DistanceDrivenLabel.Size = New System.Drawing.Size(121, 13)
         Me.DistanceDrivenLabel.TabIndex = 27
@@ -338,7 +338,7 @@ Partial Class CarRentalForm
         'MileageChargeLabel
         '
         Me.MileageChargeLabel.AutoSize = True
-        Me.MileageChargeLabel.Location = New System.Drawing.Point(472, 53)
+        Me.MileageChargeLabel.Location = New System.Drawing.Point(359, 59)
         Me.MileageChargeLabel.Name = "MileageChargeLabel"
         Me.MileageChargeLabel.Size = New System.Drawing.Size(87, 13)
         Me.MileageChargeLabel.TabIndex = 28
@@ -347,7 +347,7 @@ Partial Class CarRentalForm
         'DayChargeLabel
         '
         Me.DayChargeLabel.AutoSize = True
-        Me.DayChargeLabel.Location = New System.Drawing.Point(475, 77)
+        Me.DayChargeLabel.Location = New System.Drawing.Point(359, 83)
         Me.DayChargeLabel.Name = "DayChargeLabel"
         Me.DayChargeLabel.Size = New System.Drawing.Size(63, 13)
         Me.DayChargeLabel.TabIndex = 29
@@ -356,7 +356,7 @@ Partial Class CarRentalForm
         'DiscountLabel
         '
         Me.DiscountLabel.AutoSize = True
-        Me.DiscountLabel.Location = New System.Drawing.Point(475, 106)
+        Me.DiscountLabel.Location = New System.Drawing.Point(359, 110)
         Me.DiscountLabel.Name = "DiscountLabel"
         Me.DiscountLabel.Size = New System.Drawing.Size(80, 13)
         Me.DiscountLabel.TabIndex = 30
@@ -365,7 +365,7 @@ Partial Class CarRentalForm
         'TotalOwedLabel
         '
         Me.TotalOwedLabel.AutoSize = True
-        Me.TotalOwedLabel.Location = New System.Drawing.Point(478, 133)
+        Me.TotalOwedLabel.Location = New System.Drawing.Point(359, 136)
         Me.TotalOwedLabel.Name = "TotalOwedLabel"
         Me.TotalOwedLabel.Size = New System.Drawing.Size(51, 13)
         Me.TotalOwedLabel.TabIndex = 31
@@ -384,18 +384,18 @@ Partial Class CarRentalForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(698, 450)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.TotalOwedLabel)
         Me.Controls.Add(Me.DiscountLabel)
         Me.Controls.Add(Me.DayChargeLabel)
         Me.Controls.Add(Me.MileageChargeLabel)
         Me.Controls.Add(Me.DistanceDrivenLabel)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.DaysLabel)
+        Me.Controls.Add(Me.EndOdometerLabel)
+        Me.Controls.Add(Me.BeginOdometerLabel)
+        Me.Controls.Add(Me.ZipLabel)
+        Me.Controls.Add(Me.StateLabel)
         Me.Controls.Add(Me.CityLabel)
         Me.Controls.Add(Me.AddressLabel)
         Me.Controls.Add(Me.Label1)
@@ -455,11 +455,11 @@ Partial Class CarRentalForm
     Friend WithEvents Label1 As Label
     Friend WithEvents AddressLabel As Label
     Friend WithEvents CityLabel As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents StateLabel As Label
+    Friend WithEvents ZipLabel As Label
+    Friend WithEvents BeginOdometerLabel As Label
+    Friend WithEvents EndOdometerLabel As Label
+    Friend WithEvents DaysLabel As Label
     Friend WithEvents DistanceDrivenLabel As Label
     Friend WithEvents MileageChargeLabel As Label
     Friend WithEvents DayChargeLabel As Label
