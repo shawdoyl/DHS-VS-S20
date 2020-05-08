@@ -24,7 +24,7 @@
         'drawLine()
         'DrawEllipse()
         'DrawRectangle()
-        DrawString()
+        'DrawString()
     End Sub
 
     Private Sub GraphicsForm_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
