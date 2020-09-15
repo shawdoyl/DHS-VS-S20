@@ -58,22 +58,32 @@ Module Program
 
         Next
 
-        'For i = LBound(diceArray) To UBound(diceArray)
-        '    Console.Write(CStr(i + 2).PadRight(5) & "|")
-        'Next
 
-        Console.WriteLine("|" & CStr(diceArray(0, 2)).PadRight(5) & "|" & diceArray(1, 2))
-        Console.WriteLine("|" & CStr(diceArray(0, 3)).PadRight(5) & "|" & diceArray(1, 3))
-        Console.WriteLine("|" & CStr(diceArray(0, 4)).PadRight(5) & "|" & diceArray(1, 4))
-        Console.WriteLine("|" & CStr(diceArray(0, 5)).PadRight(5) & "|" & diceArray(1, 5))
-        Console.WriteLine("|" & CStr(diceArray(0, 6)).PadRight(5) & "|" & diceArray(1, 6))
-        Console.WriteLine("|" & CStr(diceArray(0, 7)).PadRight(5) & "|" & diceArray(1, 7))
-        Console.WriteLine("|" & CStr(diceArray(0, 8)).PadRight(5) & "|" & diceArray(1, 8))
-        Console.WriteLine("|" & CStr(diceArray(0, 9)).PadRight(5) & "|" & diceArray(1, 9))
-        Console.WriteLine("|" & CStr(diceArray(0, 10)).PadRight(5) & "|" & diceArray(1, 10))
-        Console.WriteLine("|" & CStr(diceArray(0, 11)).PadRight(5) & "|" & diceArray(1, 11))
-        Console.WriteLine("|" & CStr(diceArray(0, 12)).PadRight(5) & "|" & diceArray(1, 12))
-        Console.WriteLine("************")
+
+        Console.WriteLine("                        Roll of the Dice")
+        Console.WriteLine("------------------------------------------------------------------")
+        For i = 2 To 12
+            Console.Write(CStr(diceArray(0, i)).PadRight(5) & "|")
+
+        Next
+        Console.WriteLine(System.Environment.NewLine & "------------------------------------------------------------------")
+        For j = 2 To 12
+            Console.Write(CStr(diceArray(1, j)).PadRight(5) & "|")
+        Next
+        Console.WriteLine(System.Environment.NewLine & "------------------------------------------------------------------")
+
+        'Console.WriteLine("|" & CStr(diceArray(0, 2)).PadRight(5) & "|" & diceArray(1, 2))
+        'Console.WriteLine("|" & CStr(diceArray(0, 3)).PadRight(5) & "|" & diceArray(1, 3))
+        'Console.WriteLine("|" & CStr(diceArray(0, 4)).PadRight(5) & "|" & diceArray(1, 4))
+        'Console.WriteLine("|" & CStr(diceArray(0, 5)).PadRight(5) & "|" & diceArray(1, 5))
+        'Console.WriteLine("|" & CStr(diceArray(0, 6)).PadRight(5) & "|" & diceArray(1, 6))
+        'Console.WriteLine("|" & CStr(diceArray(0, 7)).PadRight(5) & "|" & diceArray(1, 7))
+        'Console.WriteLine("|" & CStr(diceArray(0, 8)).PadRight(5) & "|" & diceArray(1, 8))
+        'Console.WriteLine("|" & CStr(diceArray(0, 9)).PadRight(5) & "|" & diceArray(1, 9))
+        'Console.WriteLine("|" & CStr(diceArray(0, 10)).PadRight(5) & "|" & diceArray(1, 10))
+        'Console.WriteLine("|" & CStr(diceArray(0, 11)).PadRight(5) & "|" & diceArray(1, 11))
+        'Console.WriteLine("|" & CStr(diceArray(0, 12)).PadRight(5) & "|" & diceArray(1, 12))
+        'Console.WriteLine("************")
 
     End Sub
 
