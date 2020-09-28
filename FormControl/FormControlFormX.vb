@@ -41,7 +41,7 @@
         RadioButton4.Checked = True
 
         'Disabled by default
-        GoButton.Enabled = False
+        GoButton.Enabled = True
         UpdateButton.Enabled = False
         UserSelection.Enabled = False
 

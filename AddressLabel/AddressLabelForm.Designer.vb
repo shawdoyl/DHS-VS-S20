@@ -22,6 +22,7 @@ Partial Class AddressLabelForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddressLabelForm))
         Me.InputGroupBox = New System.Windows.Forms.GroupBox()
         Me.ZipLabel = New System.Windows.Forms.Label()
         Me.StateLabel = New System.Windows.Forms.Label()
@@ -203,22 +204,25 @@ Partial Class AddressLabelForm
         '
         'OutputGroupBox
         '
+        Me.OutputGroupBox.BackgroundImage = CType(resources.GetObject("OutputGroupBox.BackgroundImage"), System.Drawing.Image)
         Me.OutputGroupBox.Controls.Add(Me.DisplayLabel)
         Me.OutputGroupBox.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OutputGroupBox.Location = New System.Drawing.Point(347, 12)
+        Me.OutputGroupBox.Location = New System.Drawing.Point(367, 37)
         Me.OutputGroupBox.Name = "OutputGroupBox"
-        Me.OutputGroupBox.Size = New System.Drawing.Size(341, 253)
+        Me.OutputGroupBox.Size = New System.Drawing.Size(287, 202)
         Me.OutputGroupBox.TabIndex = 4
         Me.OutputGroupBox.TabStop = False
         Me.OutputGroupBox.Text = "Address Label"
         '
         'DisplayLabel
         '
-        Me.DisplayLabel.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DisplayLabel.Location = New System.Drawing.Point(7, 25)
+        Me.DisplayLabel.BackColor = System.Drawing.Color.Transparent
+        Me.DisplayLabel.Font = New System.Drawing.Font("Consolas", 8.0!)
+        Me.DisplayLabel.Location = New System.Drawing.Point(81, 58)
         Me.DisplayLabel.Name = "DisplayLabel"
-        Me.DisplayLabel.Size = New System.Drawing.Size(237, 112)
+        Me.DisplayLabel.Size = New System.Drawing.Size(140, 77)
         Me.DisplayLabel.TabIndex = 0
+        Me.DisplayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'AddressLabelForm
         '

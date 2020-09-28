@@ -35,6 +35,7 @@ Partial Class DiceRollForm
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,18 +52,18 @@ Partial Class DiceRollForm
         '
         'RollButton
         '
-        Me.RollButton.Location = New System.Drawing.Point(30, 71)
+        Me.RollButton.Location = New System.Drawing.Point(21, 54)
         Me.RollButton.Name = "RollButton"
-        Me.RollButton.Size = New System.Drawing.Size(129, 43)
+        Me.RollButton.Size = New System.Drawing.Size(168, 51)
         Me.RollButton.TabIndex = 1
         Me.RollButton.Text = "&Roll"
         Me.RollButton.UseVisualStyleBackColor = True
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(30, 169)
+        Me.ClearButton.Location = New System.Drawing.Point(21, 168)
         Me.ClearButton.Name = "ClearButton"
-        Me.ClearButton.Size = New System.Drawing.Size(129, 43)
+        Me.ClearButton.Size = New System.Drawing.Size(168, 51)
         Me.ClearButton.TabIndex = 2
         Me.ClearButton.Text = "&Clear"
         Me.ClearButton.UseVisualStyleBackColor = True
@@ -70,9 +71,9 @@ Partial Class DiceRollForm
         'ExitButton
         '
         Me.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.ExitButton.Location = New System.Drawing.Point(30, 218)
+        Me.ExitButton.Location = New System.Drawing.Point(21, 226)
         Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(129, 43)
+        Me.ExitButton.Size = New System.Drawing.Size(168, 51)
         Me.ExitButton.TabIndex = 3
         Me.ExitButton.Text = "&Exit"
         Me.ExitButton.UseVisualStyleBackColor = True
@@ -80,9 +81,9 @@ Partial Class DiceRollForm
         'ReRollButton
         '
         Me.ReRollButton.Enabled = False
-        Me.ReRollButton.Location = New System.Drawing.Point(30, 120)
+        Me.ReRollButton.Location = New System.Drawing.Point(21, 111)
         Me.ReRollButton.Name = "ReRollButton"
-        Me.ReRollButton.Size = New System.Drawing.Size(129, 43)
+        Me.ReRollButton.Size = New System.Drawing.Size(168, 51)
         Me.ReRollButton.TabIndex = 4
         Me.ReRollButton.Text = "&Reroll"
         Me.ReRollButton.UseVisualStyleBackColor = True
@@ -141,12 +142,20 @@ Partial Class DiceRollForm
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(21, 28)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(168, 20)
+        Me.TextBox1.TabIndex = 6
+        '
         'DiceRollForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(366, 289)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ReRollButton)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
@@ -176,4 +185,5 @@ Partial Class DiceRollForm
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TextBox1 As TextBox
 End Class
